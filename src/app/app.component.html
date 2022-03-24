@@ -1,0 +1,322 @@
+<div class="h-screen w-screen p-8 bg-gray-100">
+
+  <!-- the first cup -->
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+    <div class="w-1/2 border-r-2 pr-8">
+      <h2 class="text-xl font-bold">Coffee Mug - Custom Color</h2>
+      <p class="text-sm text-gray-400">Mug / 123</p>
+      <p class="my-5 text-gray-500 text-sm">With its clean lines and glossed glaze this ceramic mug is the perfect choice for displaying your brand. This type of gift is used frequently throughout the day and thus ensures maximum exposure.</p>
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS TO THE CUP</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selected': selectedColor === color }" [style.background-color]="color" *ngFor="let color of colors" (click)="selectedColor = color"></button>
+      </div>
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS Font Color</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfont': selectedColorfont === colorfont }" [style.background-color]="colorfont" *ngFor="let colorfont of colorsfont" (click)="selectedColorfont = colorfont"></button>
+      </div>
+      <button class=" mt-8 w-full shadow-2xl p-4 text-gray-100 bg-black rounded-md">Add to cart</button>
+    </div>
+    <app-product-preview class="w-1/2 h-[300px]" [color]="selectedColor" [colorfont]="selectedColorfont"></app-product-preview>  
+  </div>
+
+  <!-- the first cup -->
+  <div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+   <!-- mug dabdoub--> 
+   <div class="w-1/2 border-r-2 pr-8">
+    <app-mug class="w-1/2 h-[300px]" ></app-mug> 
+  </div>
+    <!-- mug cut -->
+    <app-product-tow class="w-1/2 h-[300px]" [color]="selectedColortow" ></app-product-tow>  
+   
+  </div>
+  </div>
+
+
+<div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+    <div class="w-1/2 border-r-2 pr-8">
+      <h2 class="text-xl font-bold">gift box - Custom Color</h2>
+      <p class="text-sm text-gray-400">Box / 123</p>
+      <p class="my-5 text-gray-500 text-sm">With its clean lines and glossed glaze this ceramic mug is the perfect choice for displaying your brand. This type of gift is used frequently throughout the day and thus ensures maximum exposure.</p>
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS TO THE box</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selected': selectedColorbox === color }" [style.background-color]="color" *ngFor="let color of colorsbox" (click)="selectedColorbox = color"></button>
+      </div>
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS BOND</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfont': selectedColorboxrob === colorfont }" [style.background-color]="colorfont" *ngFor="let colorfont of colorsbox" (click)="selectedColorboxrob = colorfont"></button>
+      </div>
+      <button class=" mt-8 w-full shadow-2xl p-4 text-gray-100 bg-black rounded-md">Add to cart</button>
+    </div>
+    <app-gift-box class="w-1/2 h-[300px]" [color]="selectedColorbox"  [colorfont]="selectedColorboxrob"></app-gift-box>  
+  </div>
+</div>
+
+<!-- the first cup -->
+<div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+   <!-- mug dabdoub--> 
+   <div class="w-1/2 border-r-2 pr-8">
+    <app-popcorn1 class="w-1/2 h-[300px]" ></app-popcorn1> 
+   </div>
+    <!-- mug cut -->
+    <app-popcorn class="w-1/2 h-[300px]"  ></app-popcorn>  
+   
+  </div>
+  </div>
+
+
+<div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+    <div class="w-1/2 border-r-2 pr-8">
+      <h2 class="text-xl font-bold">soda can - Custom Color</h2>
+      <p class="text-sm text-gray-400">Mug / 123</p>
+      <p class="my-5 text-gray-500 text-sm">With its clean lines and glossed glaze this ceramic mug is the perfect choice for displaying your brand. This type of gift is used frequently throughout the day and thus ensures maximum exposure.</p>
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS TO THE SODA CAN</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selected':selectedColorcan === color }" [style.background-color]="color" *ngFor="let color of colorscan" (click)="selectedColorcan = color"></button>
+      </div>
+      <button class=" mt-8 w-full shadow-2xl p-4 text-gray-100 bg-black rounded-md">Add to cart</button>
+    </div>
+    <app-soda-can class="w-1/2 h-[300px]" [color]="selectedColorcan"  ></app-soda-can>  
+  </div>
+</div>
+
+<div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+    <div class="w-1/2 border-r-2 pr-8">
+      <h2 class="text-xl font-bold">Cake - Custom Color</h2>
+      <p class="text-sm text-gray-400">Mug / 123</p>
+      <p class="my-5 text-gray-500 text-sm">With its clean lines and glossed glaze this ceramic mug is the perfect choice for displaying your brand. This type of gift is used frequently throughout the day and thus ensures maximum exposure.</p>
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+    <div class="w-1/2  pr-8">
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS TO stage</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selected': selectedColorcake === color }" [style.background-color]="color" *ngFor="let color of colorscake" (click)="selectedColorcake = color"></button>
+      </div>
+    </div>
+    <div class="w-1/2  pr-8">
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS Font Color</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedcake': selectedColorcake2 === colorfont }" [style.background-color]="colorfont" *ngFor="let colorfont of colorscake" (click)="selectedColorcake2 = colorfont"></button>
+      </div>
+    </div>
+    </div>
+
+    <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+      <div class="w-1/2  pr-8">
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS Font Color</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfrais': selectedColorcake3 === colorfrais }" [style.background-color]="colorfrais" *ngFor="let colorfrais of colorscake" (click)="selectedColorcake3 = colorfrais"></button>
+      </div>
+    </div>
+
+    <div class="w-1/2  pr-8">
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS Font Color</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfrais': selectedColorcake1 === colorfrais }" [style.background-color]="colorfrais" *ngFor="let colorfrais of colorscake" (click)="selectedColorcake1 = colorfrais"></button>
+      </div>
+    </div>
+  </div>
+      <button class=" mt-8 w-full shadow-2xl p-4 text-gray-100 bg-black rounded-md">Add to cart</button>
+    </div>
+    <app-cake class="w-1/2 h-[300px]" [color]="selectedColorcake" [colorfont]="selectedColorcake1" [colorcake]="selectedColorcake2" [colorfrais]="selectedColorcake3"></app-cake>  
+  </div>
+</div>
+
+<div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+    <div class="w-1/2 border-r-2 pr-8">
+      <h2 class="text-xl font-bold">Double Chocolate Cake With Sprinkles - Custom Color</h2>
+      <p class="text-sm text-gray-400">Mug / 123</p>
+      <p class="my-5 text-gray-500 text-sm">With its clean lines and glossed glaze this ceramic mug is the perfect choice for displaying your brand. This type of gift is used frequently throughout the day and thus ensures maximum exposure.</p>
+     
+      <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+        <div class="w-1/2  pr-8">
+        <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS TO Sprinkle </h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selected': selectedColordouble1 === color }" [style.background-color]="color" *ngFor="let color of colors" (click)="selectedColordouble1 = color"></button>
+      </div>
+    </div>
+    <div class="w-1/2  pr-8">   
+      <h3 class="text-sm text-gray-400 tracking-widest">OPTIONS Whipped Cream Color</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfont': selectedColordouble2 === colorfont }" [style.background-color]="colorfont" *ngFor="let colorfont of colorsfont" (click)="selectedColordouble2 = colorfont"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl ">
+    <div class="w-1/2  pr-8">   
+      <h3 class="text-sm text-gray-400 tracking-widest">OPTIONS LayerCake Color</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfont': selectedColordouble3 === colorcake }" [style.background-color]="colorcake" *ngFor="let colorcake of colorscake" (click)="selectedColordouble3 = colorcake"></button>
+      </div>
+    </div>
+
+    <div class="w-1/2  pr-8"> 
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS Cherry Color</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfont': selectedColordouble4 === colorcake }" [style.background-color]="colorcake" *ngFor="let colorcake of colorscake" (click)="selectedColordouble4 = colorcake"></button>
+      </div>
+    </div>
+  
+    </div>
+  </div>
+
+      <button class=" mt-8 w-full shadow-2xl p-4 text-gray-100 bg-black rounded-md">Add to cart</button>
+    </div>
+    <app-cake1 class="w-1/2 h-[300px]" [color]="selectedColordouble1" [colorfont]="selectedColordouble2" [colorcake]="selectedColordouble3"  [colorfrais]="selectedColordouble4" ></app-cake1>  
+  </div>
+</div>
+
+<div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+    <div class="w-1/2 border-r-2 pr-8">
+      <h2 class="text-xl font-bold">CupCake - Custom Color</h2>
+      <p class="text-sm text-gray-400">Mug / 123</p>
+      <p class="my-5 text-gray-500 text-sm">With its clean lines and glossed glaze this ceramic mug is the perfect choice for displaying your brand. This type of gift is used frequently throughout the day and thus ensures maximum exposure.</p>
+      <button class=" mt-8 w-full shadow-2xl p-4 text-gray-100 bg-black rounded-md">Add to cart</button>
+    </div>
+    <app-cupcake class="w-1/2 h-[300px]" [color]="selectedColortow" ></app-cupcake>  
+  </div>
+</div>
+
+<div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+    <div class="w-1/2 border-r-2 pr-8">
+      <h2 class="text-xl font-bold">Coffee Mug - Custom Color</h2>
+      <p class="text-sm text-gray-400">Mug / 123</p>
+      <p class="my-5 text-gray-500 text-sm">With its clean lines and glossed glaze this ceramic mug is the perfect choice for displaying your brand. This type of gift is used frequently throughout the day and thus ensures maximum exposure.</p>
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS TO THE CUP</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selected': selectedColor === color }" [style.background-color]="color" *ngFor="let color of colors" (click)="selectedColor = color"></button>
+      </div>
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS Font Color</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfont': selectedColorfont === colorfont }" [style.background-color]="colorfont" *ngFor="let colorfont of colorsfont" (click)="selectedColorfont = colorfont"></button>
+      </div>
+      <button class=" mt-8 w-full shadow-2xl p-4 text-gray-100 bg-black rounded-md">Add to cart</button>
+    </div>
+    <app-cupcake1 class="w-1/2 h-[300px]" [color]="selectedColortow" ></app-cupcake1>  
+  </div>
+</div>
+
+<div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+    <div class="w-1/2 border-r-2 pr-8">
+      <h2 class="text-xl font-bold">Coffee Mug - Custom Color</h2>
+      <p class="text-sm text-gray-400">Mug / 123</p>
+      <p class="my-5 text-gray-500 text-sm">With its clean lines and glossed glaze this ceramic mug is the perfect choice for displaying your brand. This type of gift is used frequently throughout the day and thus ensures maximum exposure.</p>
+    
+    <!-- <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS TO THE CUP</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selected': selectedColor === color }" [style.background-color]="color" *ngFor="let color of colors" (click)="selectedColor = color"></button>
+      </div>
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS Font Color</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfont': selectedColorfont === colorfont }" [style.background-color]="colorfont" *ngFor="let colorfont of colorsfont" (click)="selectedColorfont = colorfont"></button>
+      </div>
+       --> 
+      <button class=" mt-8 w-full shadow-2xl p-4 text-gray-100 bg-black rounded-md">Add to cart</button>
+    </div>
+
+    <app-cupcake2 class="w-1/2 h-[300px]" [color]="selectedColortow" ></app-cupcake2>  
+  </div>
+</div>
+
+<div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+    <div class="w-1/2 border-r-2 pr-8">
+      <h2 class="text-xl font-bold">Coffee Mug - Custom Color</h2>
+      <p class="text-sm text-gray-400">Mug / 123</p>
+      <p class="my-5 text-gray-500 text-sm">With its clean lines and glossed glaze this ceramic mug is the perfect choice for displaying your brand. This type of gift is used frequently throughout the day and thus ensures maximum exposure.</p>
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS TO THE CUP</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selected': selectedColor === color }" [style.background-color]="color" *ngFor="let color of colors" (click)="selectedColor = color"></button>
+      </div>
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS Font Color</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfont': selectedColorfont === colorfont }" [style.background-color]="colorfont" *ngFor="let colorfont of colorsfont" (click)="selectedColorfont = colorfont"></button>
+      </div>
+      <button class=" mt-8 w-full shadow-2xl p-4 text-gray-100 bg-black rounded-md">Add to cart</button>
+    </div>
+    <app-cake3 class="w-1/2 h-[300px]" [color]="selectedColortow" ></app-cake3>  
+  </div>
+</div>
+
+
+<div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+    <div class="w-1/2 border-r-2 pr-8">
+      <h2 class="text-xl font-bold">Coffee Mug - Custom Color</h2>
+      <p class="text-sm text-gray-400">Mug / 123</p>
+      <p class="my-5 text-gray-500 text-sm">With its clean lines and glossed glaze this ceramic mug is the perfect choice for displaying your brand. This type of gift is used frequently throughout the day and thus ensures maximum exposure.</p>
+      <!--
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS TO THE CUP</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selected': selectedColor === color }" [style.background-color]="color" *ngFor="let color of colors" (click)="selectedColor = color"></button>
+      </div>
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS Font Color</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfont': selectedColorfont === colorfont }" [style.background-color]="colorfont" *ngFor="let colorfont of colorsfont" (click)="selectedColorfont = colorfont"></button>
+      </div>
+      -->
+      <button class=" mt-8 w-full shadow-2xl p-4 text-gray-100 bg-black rounded-md">Add to cart</button>
+    </div>
+    
+    <app-cake4 class="w-1/2 h-[200px]" [color]="selectedColortow" ></app-cake4>  
+  </div>
+</div>
+
+
+<div class="padd">
+  <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+    <div class="w-1/2 border-r-2 pr-8">
+      <h2 class="text-xl font-bold">Coffee Mug - Custom Color</h2>
+    <!-- <p class="text-sm text-gray-400">Mug / 123</p>
+      <p class="my-5 text-gray-500 text-sm">With its clean lines and glossed glaze this ceramic mug is the perfect choice for displaying your brand. This type of gift is used frequently throughout the day and thus ensures maximum exposure.</p>
+      --> 
+      <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+        <div class="w-1/2  pr-8">
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS Base Stand</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selected': selectedColorcake31 === color }" [style.background-color]="color" *ngFor="let color of colors" (click)="selectedColorcake31 = color"></button>
+      </div>
+    </div>
+    <div class="w-1/2  pr-8">
+      <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS Cream</h3>
+      <div class="flex mt-4 gap-4">
+        <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfont': selectedColorcake32 === colorfont }" [style.background-color]="colorfont" *ngFor="let colorfont of colorsfont" (click)="selectedColorcake32 = colorfont"></button>
+      </div>
+    </div>
+
+    </div>
+
+      
+    <div class="bg-white flex p-10 justify-center rounded-2xl shadow-xl">
+      <div class="w-1/2  pr-8">
+    <h3 class="text-sm text-gray-400 tracking-widest">OPTIONS Second Cream </h3>
+    <div class="flex mt-4 gap-4">
+      <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfont': selectedColorcake33 === colorfont }" [style.background-color]="colorfont" *ngFor="let colorfont of colorsfont" (click)="selectedColorcake33 = colorfont"></button>
+    </div>
+   </div>
+   <div class="w-1/2  pr-8">
+    <h3 class="text-sm text-gray-400 tracking-widest">COLOR OPTIONS Sphere Mala</h3>
+    <div class="flex mt-4 gap-4">
+      <button class="h-6 w-6 rounded-full shadow-lg cursor-pointer hover:opacity-50 border-2 border-white" [ngClass]="{ 'selectedfont': selectedColorcake34 === colorfont }" [style.background-color]="colorfont" *ngFor="let colorfont of colorsfont" (click)="selectedColorcake34 = colorfont"></button>
+    </div>
+  </div>
+</div>
+    <button class=" mt-8 w-full shadow-2xl p-4 text-gray-100 bg-black rounded-md">Add to cart</button>
+    </div>
+    <app-cake2 class="w-1/2 h-[500px] " [color]="selectedColorcake31" [colorfont]="selectedColorcake32" [colorcake]="selectedColorcake33"  [colorfrais]="selectedColorcake34" ></app-cake2>  
+  </div>
+</div>
+
+
+</div>
+
+
